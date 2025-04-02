@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.aero-nav a[href^="#"]');
 
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault(); // Prevent default anchor jump
 
             const targetId = this.getAttribute('href');
@@ -28,6 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactButton = document.getElementById('contact-button-js');
     const contactResponse = document.getElementById('contact-response');
 
+    const skeuoButton = document.getElementById('skeuomorphism-wiki-link');
+    const frutiButton = document.getElementById('frutiger-aero-wiki-link');
+
+
     if (contactButton && contactResponse) {
         contactButton.addEventListener('click', () => {
             // Add a "pressed" visual style temporarily (optional)
@@ -42,22 +46,52 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 contactButton.style.transform = '';
                 contactButton.style.boxShadow = ''; // Reset to CSS default
-                 // Optionally clear the message after a longer delay
-                 // setTimeout(() => { contactResponse.textContent = ''; }, 3000);
+                // Optionally clear the message after a longer delay
+                // setTimeout(() => { contactResponse.textContent = ''; }, 3000);
             }, 200); // 200 milliseconds
         });
     }
 
+    if (skeuoButton) {
+        skeuoButton.addEventListener('click', () => {
+            skeuoButton.style.transform = 'translateY(1px)';
+            skeuoButton.style.boxShadow = 'inset 0 2px 4px rgba(0, 0, 0, 0.2)';
+
+            window.location.href = "https://en.wikipedia.org/wiki/Skeuomorph";
+            console.log('Skeuomorphism wiki link button clicked.');
+
+            setTimeout(() => {
+                skeuoButton.style.transform = '';
+                skeuoButton.style.boxShadow = ''; 
+            }, 200); 
+        });
+    }
+
+    if (frutiButton) {
+        frutiButton.addEventListener('click', () => {
+            frutiButton.style.transform = 'translateY(1px)';
+            frutiButton.style.boxShadow = 'inset 0 2px 4px rgba(0, 0, 0, 0.2)';
+
+            window.location.href = "https://en.wikipedia.org/wiki/Frutiger_Aero";
+            console.log('Frutiger Aero wiki link button clicked.');
+
+            setTimeout(() => {
+                frutiButton.style.transform = '';
+                frutiButton.style.boxShadow = ''; 
+            }, 200); 
+        });
+    }
+
     // --- Add subtle hover effect to project items (optional enhancement) ---
-    // const projectItems = document.querySelectorAll('.project-item');
-    // projectItems.forEach(item => {
-    //     item.addEventListener('mouseenter', () => {
-    //         // You could add more complex JS animations here if desired
-    //     });
-    //     item.addEventListener('mouseleave', () => {
-    //         // Reset animations
-    //     });
-    // });
+    const projectItems = document.querySelectorAll('.project-item');
+    projectItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            // You could add more complex JS animations here if desired
+        });
+        item.addEventListener('mouseleave', () => {
+            // Reset animations
+        });
+    });
 
     console.log("Frutiger Aero Skeleton Initialized!");
 });
