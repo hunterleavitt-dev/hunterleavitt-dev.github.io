@@ -11,13 +11,13 @@ body {
     line-height: 1.6;
     color: #333;
     /* Frutiger Aero Background: Subtle green gradient inspired by nature */
-    background: linear-gradient(to bottom, #e0f2e9 0%, #ffffff 100%); /* Soft minty green to white */
+    /*background: linear-gradient(to bottom, #e0f2e9 0%, #ffffff 100%); /* Soft minty green to white */
     
     /* Or use a background image: */
     
-    /* background-image: url('../images/vista-style-background.jpg'); */
-    /* background-size: cover; */
-    /* background-attachment: fixed; */
+    background-image: url('../images/eco_background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     
     padding: 20px; /* Add padding around the whole page */
 }
