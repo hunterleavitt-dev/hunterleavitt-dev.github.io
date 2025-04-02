@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentYearSpan.textContent = new Date().getFullYear();
     }
 
-    // --- Example: Simple interaction for a button ---
+    // --- Simple interaction for a button ---
     const contactButton = document.getElementById('contact-button-js');
     const contactResponse = document.getElementById('contact-response');
 
@@ -86,10 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectItems = document.querySelectorAll('.project-item');
     projectItems.forEach(item => {
         item.addEventListener('mouseenter', () => {
-            // You could add more complex JS animations here if desired
+            // add more complex JS animations here if desired
         });
         item.addEventListener('mouseleave', () => {
-            // Reset animations
+            // reset animations
         });
     });
 
