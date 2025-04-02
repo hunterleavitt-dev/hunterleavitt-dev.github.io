@@ -1,103 +1,91 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html lang="en-US">
-
+<html lang="en">
 <head>
-    <style>
-        .textandlinks {
-            text-align: center;
-            align-items: center;
-            width: 800px;
-            margin: auto;
-        }
-
-        .imagecont {
-            text-align: center;
-            align-content: center;
-            align-items: center;
-            width: 350;
-            margin: auto;
-            margin-top: 10px;
-        }
-
-        .linkcont {
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            align-items: center;
-            align-content: center;
-        }
-
-        .linkbutton {
-            text-align: center;
-            align-items: center;
-            align-content: center;
-            width: 266px;
-            height: 133px;
-        }
-
-        body {
-            background-color: #e8f4fd;
-        }
-
-        h1 {
-            color: #004085;
-            font-size: 300%;
-        }
-
-        p {
-            color: #004085;
-            font-family: 'Times New Roman';
-            font-size: 150%;
-        }
-    </style>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon (Optional but nice) - generate one and add it here -->
+    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
 </head>
-
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <script src="" async defer></script>
-    <div class="imagecont">
-        <img src="professionalpic.jpg" alt="It's a-me, Mario!" style="vertical-align:auto;" height="600;" width="600">
-    </div>
-    <div class="textandlinks">
-        <h1 style="text-align:center;">Hunter Leavitt</h1>
-        <p style="text-align: center;">Hello, and welcome to my website! This site showcases some of my projects, both
-            professional and non-professional, in addition to containing information that will both allow you to get to
-            know me better,
-            as well as get in touch. Please click any one of the three links below to get started.
-        </p>
-        <div class="linkcont">
 
-            <div class="linkbutton">
-                <button style="padding: 10px; background-color: #e9f0f9;"
-                    onclick="window.location.href='projects.html';">
-                    My Projects
-                </button>
+    <div class="page-wrapper">
+
+        <!-- Header - Mimics a glossy Aero bar -->
+        <header class="aero-header">
+            <div class="header-content">
+                <h1>Your Name</h1>
+                <p class="subtitle">Web Developer | Designer | Tech Enthusiast</p>
             </div>
-            <div class="linkbutton">
-                <button style="padding: 10px; background-color: #e9f0f9;"
-                    onclick="window.location.href='aboutme.html';">
-                    About Me
-                </button>
-            </div>
-            <div class="linkbutton">
-                <button style="padding: 10px; background-color: #e9f0f9;"
-                    onclick="window.location.href='contact.html';">
-                    Contact Information
-                </button>
-            </div>
-        </div>
-    </div>
+        </header>
+
+        <!-- Navigation - Can be part of the header or separate -->
+        <nav class="aero-nav">
+            <ul>
+                <li><a href="#about" class="nav-button">About Me</a></li>
+                <li><a href="#projects" class="nav-button">Projects</a></li>
+                <li><a href="#contact" class="nav-button">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+
+            <!-- About Section - Contained within a "panel" -->
+            <section id="about" class="content-panel">
+                <h2><span class="icon">👤</span> About Me</h2>
+                <p>Welcome to my personal corner of the web! I'm passionate about [Your Passion 1], [Your Passion 2], and creating intuitive digital experiences. This site is a small experiment in bringing back some skeuomorphic charm inspired by the Frutiger Aero era.</p>
+                <p>Here you'll find information about my skills, projects, and how to get in touch.</p>
+                <button class="aero-button">Learn More (Example)</button>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-panel">
+                <h2><span class="icon">📁</span> Projects</h2>
+                <p>Here are a few things I've worked on:</p>
+                <div class="project-grid">
+                    <!-- Project Item Example 1 -->
+                    <div class="project-item">
+                        <img src="images/placeholder-project.png" alt="Project 1 Placeholder" class="project-image">
+                        <h3>Project Title 1</h3>
+                        <p>A brief description of the project goes here. What tech did you use? What problem did it solve?</p>
+                        <a href="#" class="aero-button small-button">View Details</a>
+                    </div>
+                    <!-- Project Item Example 2 -->
+                    <div class="project-item">
+                        <img src="images/placeholder-project.png" alt="Project 2 Placeholder" class="project-image">
+                        <h3>Project Title 2</h3>
+                        <p>Another project description. Keep it concise and engaging.</p>
+                        <a href="#" class="aero-button small-button">View Details</a>
+                    </div>
+                    <!-- Add more project items as needed -->
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content-panel">
+                <h2><span class="icon">✉️</span> Contact</h2>
+                <p>Feel free to reach out! You can find me on:</p>
+                <ul>
+                    <li><strong>LinkedIn:</strong> <a href="#">Your LinkedIn Profile</a></li>
+                    <li><strong>GitHub:</strong> <a href="#">Your GitHub Profile</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                </ul>
+                 <button id="contact-button-js" class="aero-button">Say Hello (JS Example)</button>
+                 <p id="contact-response" style="margin-top: 10px; color: #005a8e;"></p>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="aero-footer">
+            <p>© <span id="current-year"></span> Your Name. All Rights Reserved.</p>
+            <p>Design inspired by Frutiger Aero & Skeuomorphism.</p>
+        </footer>
+
+    </div> <!-- End page-wrapper -->
+
+    <script src="js/script.js"></script>
 </body>
-
 </html>
