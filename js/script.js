@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const skeuoButton = document.getElementById('skeuomorphism-wiki-link');
     const frutiButton = document.getElementById('frutiger-aero-wiki-link');
 
+    const proj1Button = document.getElementById('project-1-details');
+    const proj2Button = document.getElementById('project-2-details');
+
 
     if (contactButton && contactResponse) {
         contactButton.addEventListener('click', () => {
@@ -52,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // button to skeu wiki page
     if (skeuoButton) {
         skeuoButton.addEventListener('click', () => {
             skeuoButton.style.transform = 'translateY(1px)';
@@ -67,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // button to frutiger wiki page
     if (frutiButton) {
         frutiButton.addEventListener('click', () => {
             frutiButton.style.transform = 'translateY(1px)';
@@ -78,6 +83,38 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 frutiButton.style.transform = '';
                 frutiButton.style.boxShadow = ''; 
+            }, 200); 
+        });
+    }
+
+    // view details for project 1 TODO
+    if (proj1Button){
+        proj1Button.addEventListener('click', () => {
+            proj1Button.style.transform = 'translateY(1px)';
+            proj1Button.style.boxShadow = 'inset 0 2px 4px rgba(0, 0, 0, 0.2)';
+
+            // window.location.href = "";
+            console.log('Project 1 details view clicked.');
+
+            setTimeout(() => {
+                proj1Button.style.transform = '';
+                proj1Button.style.boxShadow = ''; 
+            }, 200); 
+        });
+    }
+
+    // view details for project 2 TODO
+    if (proj2Button){
+        proj2Button.addEventListener('click', () => {
+            proj2Button.style.transform = 'translateY(1px)';
+            proj2Button.style.boxShadow = 'inset 0 2px 4px rgba(0, 0, 0, 0.2)';
+
+            // window.location.href = "";
+            console.log('Project 2 details view clicked.');
+
+            setTimeout(() => {
+                proj2Button.style.transform = '';
+                proj2Button.style.boxShadow = ''; 
             }, 200); 
         });
     }
