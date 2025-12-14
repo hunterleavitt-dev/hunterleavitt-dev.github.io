@@ -14,7 +14,19 @@ h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #ecf0f1;
     color: #333;
+    border-style: underline solid;
+    border-color: #333;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
 h2 {
@@ -66,6 +78,8 @@ nav ul {
     padding: 0;
     margin: 1rem 0 0 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -73,6 +87,9 @@ nav li {
     border: 1px solid #333;
     padding: 8px 16px;
     background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 nav a {
@@ -82,7 +99,16 @@ nav a {
 }
 
 nav a:hover {
-    color: red;
+    color: #fff;
+    border-style: underline solid;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: red;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 /* Figure and Image */
@@ -109,14 +135,23 @@ figcaption {
 
 .header-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
 .header-container img {
-    max-width: 100px;
+    max-width: 200px;
     height: auto;
     border: 1px solid #ecf0f1;
+    border-style: underline solid;
+    border-color: #333;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 /* Footer Links */
