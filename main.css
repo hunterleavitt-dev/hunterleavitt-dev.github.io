@@ -14,14 +14,14 @@ h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #2c3e50;
+    color: #333;
 }
 
 h2 {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #34495e;
+    color: #333;
     border-bottom: 2px solid #ecf0f1;
     padding-bottom: 0.5rem;
 }
@@ -30,32 +30,32 @@ h2 {
 p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
-    color: #555;
+    color: #333;
 }
 
 /* Wire-frame Structure */
 header {
-    border: 3px solid #3498db;
+    border: 3px solid #333;
     padding: 20px;
     margin-bottom: 30px;
     background-color: #ecf0f1;
 }
 
 main {
-    border: 3px solid #e74c3c;
+    border: 3px solid #333;
     padding: 20px;
     margin-bottom: 30px;
 }
 
 section {
-    border: 2px solid #2ecc71;
+    border: 2px solid #333;
     padding: 20px;
     margin-bottom: 25px;
     background-color: #f8f9fa;
 }
 
 footer {
-    border: 3px solid #9b59b6;
+    border: 3px solid #333;
     padding: 20px;
     background-color: #ecf0f1;
 }
@@ -70,24 +70,24 @@ nav ul {
 }
 
 nav li {
-    border: 1px solid #bdc3c7;
+    border: 1px solid #333;
     padding: 8px 16px;
     background-color: #fff;
 }
 
 nav a {
     text-decoration: none;
-    color: #3498db;
+    color: maroon;
     font-weight: 500;
 }
 
 nav a:hover {
-    color: #2980b9;
+    color: red;
 }
 
 /* Figure and Image */
 figure {
-    border: 2px solid #f39c12;
+    border: 2px solid #333;
     padding: 15px;
     margin: 0;
     background-color: #fff;
@@ -129,17 +129,17 @@ footer ul {
 }
 
 footer li {
-    border: 1px solid #bdc3c7;
+    border: 1px solid #333;
     padding: 8px 16px;
     background-color: #fff;
 }
 
 footer a {
     text-decoration: none;
-    color: #9b59b6;
+    color: maroon;
     font-weight: 500;
 }
 
 footer a:hover {
-    color: #8e44ad;
+    color: red;
 }
