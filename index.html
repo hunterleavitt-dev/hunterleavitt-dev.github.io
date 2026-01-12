@@ -5,57 +5,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Engineer Portfolio</title>
+    <title>HL Software Design & Engineering</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <img src="media/plogo.svg" alt="Personal Logo">
-            <h1>Software Design & Engineering</h1>
+    <header class="modern-header">
+        <div class="header-banner">
+            <div class="header-content">
+                <img src="media/hl_mark_primary.svg" alt="Personal Logo" class="logo">
+                <div class="header-text">
+                    <h1>Software Design & Engineering</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="media/moi.png" alt="Headshot of the author" class="hero-image">
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <figure>
-                <!-- <img src="" alt="Headshot of the author"> -->
-                <figcaption>Headshot of the author</figcaption>
-            </figure>
+
+        <section id="about" class="collapsible-section">
+            <div class="section-header" onclick="toggleSection('about')">
+                <h2>About Me</h2>
+                <span class="toggle-arrow" id="arrow-about">▼</span>
+            </div>
+            <div class="section-content" id="content-about">
+                <p>
+                    My name is Hunter Leavitt and I am a recent graduate of the University of Utah, having majored in Computer Science and minored in Business.
+                    I initially studied Finance when beginning my undergraduate degree before pivoting to Computer Science about a year in. This decision came
+                    as a result of my self-study of the Python language, where I utilized the text by <a href="https://en.wikipedia.org/wiki/Zed_Shaw">Shaw</a>,
+                    <em>Learn Python the Hard Way</em>, as my guide (a resource I still personally recommend for new learners with the official course accessible <a href="https://learnpythonthehardway.org/">here</a>).
+                    True to that texts' name, I came to the realization that I was indeed learning about computing the "hard way" and decided to make my studies official
+                    in order to bolster my efforts, pivoting hard into STEM.
+                </p>
+                <p>
+                    Now that you've got some context on the path I've taken leading to the present, I'd like to share some of my interests with you; I am a deeply inquisitive
+                    individual and an avid reader, in love with hard sci-fi novels. If I am not reading such novels, then you are likely to find me reading non-fiction historical
+                    accounts. I also enjoying making things, engaging in hobbyist-level fabrication of personal physical goods with my trusty 3D printer, an internet connection, 
+                    and the miracle of cheap piecemeal electronics. Lastly, I enjoy being something of a tourist and partaking in activities enjoyed by the ones I love, such as climbing
+                    with my partner or playing tennis with my grandfather.
+                </p>
+                <p>
+                    Personally, to give something of a succinct value statement, I believe that computing is a miraculous development that should be accessible for all Humans. Through
+                    computing, people can obtain education on subjects they may not otherwise be exposed to; a parent can ascertain the status of their child in a moment of uncertainty
+                    from thousands of kilometers away, with a level of difficulty nearly commensurate with basic thought and speech. It is for the bolstering and continuance of those ideas
+                    that I chose to study Computer Science, and my hope is that with attention to my craft I can help to enable such connections.
+                </p>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>TODO</p>
+        <section id="experience" class="collapsible-section">
+            <div class="section-header" onclick="toggleSection('experience')">
+                <h2>Experience</h2>
+                <span class="toggle-arrow" id="arrow-experience">▼</span>
+            </div>
+            <div class="section-content" id="content-experience">
+                <p>
+                    Professionally, I have experience designing, building, and testing CRUD applications built using C#, Windows Forms, and other parts of the .NET Framework for the Automotive Aftermarket.
+                    Said applications were written to automate manual data-entry processes involving data encoded in an industry-specific XML format. 
+                </p>
+                <p>
+                    Academically, I have formally studied computer networking, system security, web application development, physical robotics, artificial intelligence, object-oriented programming
+                    and modern software development paradigms such as the Agile and Waterfall techniques. I am also one of the lead developers and principal maintainers of the OpenFarm project,
+                    which is an open-source platform for managing groups of 3D printers.
+                </p>
+            </div>
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <p>TODO</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>TODO</p>
+        <section id="projects" class="collapsible-section">
+            <div class="section-header" onclick="toggleSection('projects')">
+                <h2>Projects</h2>
+                <span class="toggle-arrow" id="arrow-projects">▼</span>
+            </div>
+            <div class="section-content" id="content-projects">
+                <ul class="projects-list">
+                    <li><a href="fractal-education-app.html">Fractal Education App</a></li>
+                    <li><a href="openfarm.html">OpenFarm</a></li>
+                    
+                    <!-- TODO: UNCOMMENT WHEN COMPLETED -->
+                    <!-- <li><a href="snuffles.html">Snuffles</a></li> --> 
+                </ul>
+            </div>
         </section>
     </main>
 
-    <footer id="contact">
-        <h2>Contact</h2>
-        <ul>
-            <li><a href="https://linkedin.com/in/username">LinkedIn</a></li>
-            <li><a href="https://github.com/username">GitHub</a></li>
-            <li><a href="mailto:email@example.com">Email</a></li>
-        </ul>
+    <footer id="contact" class="collapsible-section">
+        <div class="section-header" onclick="toggleSection('contact')">
+            <h2>Contact</h2>
+            <span class="toggle-arrow" id="arrow-contact">▼</span>
+        </div>
+        <div class="section-content" id="content-contact">
+            <ul>
+                <li><a href="https://linkedin.com/in/hunter-leavitt">LinkedIn</a></li>
+                <li><a href="https://github.com/observantabc123">GitHub</a></li>
+                <li><a href="mailto:hunterleavitt98@gmail.com">Email</a></li>
+            </ul>
+        </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="main.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractal Education App - HL Software Design & Engineering</title>
+</head>
+
+<body>
+    <header class="modern-header">
+        <div class="header-banner">
+            <div class="header-content">
+                <img src="media/hl_mark_primary.svg" alt="Personal Logo" class="logo">
+                <div class="header-text">
+                    <h1>Software Design & Engineering</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#experience">Experience</a></li>
+                            <li><a href="index.html#projects">Projects</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="media/moi.png" alt="Headshot of the author" class="hero-image">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-header">
+            <h1>FernLearn</h1>
+            <p class="project-subtitle">An interactive educational application for exploring the mathematics underlying the Barnsley Fern fractal, developed in
+                 collaboration with Joshua Schell, Tyler Peters, Matthew Elliott, and Aidan McKellar.
+            </p>
+        </section>
+
+        <section class="project-overview">
+            <h2>Overview</h2>
+            <p>
+                FernLearn is an interactive application designed to help students and educators
+                explore the fascinating world of fractal mathematics. Through visual demonstrations and hands-on
+                manipulation, users can gain a deeper understanding of how the Barnsley Fern fractal is generated and its
+                mathematical properties.
+            </p>
+            <div class="screenshot-carousel">
+                <div class="carousel-container">
+                    <button class="carousel-btn carousel-btn-prev" onclick="changeSlide(-1)">‹</button>
+                    <div class="carousel-slides">
+                        <figure class="carousel-slide active">
+                            <img src="media/fernlearnpics/title.png" alt="FernLearn Title Screen">
+                            <figcaption>Title Screen</figcaption>
+                        </figure>
+                        <figure class="carousel-slide">
+                            <img src="media/fernlearnpics/tutorial.png" alt="FernLearn Tutorial Mode">
+                            <figcaption>Tutorial Mode</figcaption>
+                        </figure>
+                        <figure class="carousel-slide">
+                            <img src="media/fernlearnpics/sandbox.png" alt="FernLearn Sandbox Mode">
+                            <figcaption>Sandbox Mode</figcaption>
+                        </figure>
+                    </div>
+                    <button class="carousel-btn carousel-btn-next" onclick="changeSlide(1)">›</button>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-technologies">
+            <h2>Technologies Used</h2>
+            <ul class="tech-list">
+                <div>
+                    <li>Qt</li>
+                    <img src="media/Qt_logo_2016.svg">
+                </div>
+                <div>
+                    <li>C++</li>
+                    <img src="media/ISO_C++_Logo.svg">
+                </div>
+                <div>
+                    <li>OpenGL</li>
+                    <img src="media/Opengl-logo.svg">
+                </div>
+                <div>
+                    <li>Box2D</li>
+                    <img src="media/Box2D_logo.svg">
+                </div>
+                <div>
+                    <li>CMake</li>
+                    <img src="media/CMake_logo.svg">
+                </div>
+                <div>
+                    <li>Git</li>
+                    <img src="media/Git-logo.svg">
+                </div>
+                <div>
+                    <li>GitHub</li>
+                    <img src="media/Octicons-mark-github.svg">
+                </div>
+                <div>
+                    <li>Linux</li>
+                    <img src="media/Tux.svg">
+                </div>
+                <div>
+                    <li>Docker</li>
+                    <img src="media/Docker-svgrepo-com.svg">
+                </div>
+                <div>
+                    <li>gdb</li>
+                    <img src="media/archer.svg">
+                </div>
+            </ul>
+        </section>
+
+        <section class="project-features">
+            <h2>Features</h2>
+            <ul class="features-list">
+                <li>Interactive fractal generation and visualization</li>
+                <li>Real-time parameter adjustment</li>
+                <li>Educational explanations and mathematical context via multimedia tutorial</li>
+                <li>Zoom and pan capabilities for detailed exploration</li>
+                <li>Offhand creation of pixel-art using application toolset</li>
+            </ul>
+        </section>
+
+        <section class="project-links">
+            <h2>Links</h2>
+            <ul class="links-list">
+                <li><a href="https://github.com/observantabc123" target="_blank">GitHub Repository</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li><a href="https://linkedin.com/in/hunter-leavitt">LinkedIn</a></li>
+            <li><a href="https://github.com/observantabc123">GitHub</a></li>
+            <li><a href="mailto:hunterleavitt98@gmail.com">Email</a></li>
+        </ul>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlide(index) {
+            if (index >= slides.length) {
+                currentSlideIndex = 0;
+            } else if (index < 0) {
+                currentSlideIndex = slides.length - 1;
+            } else {
+                currentSlideIndex = index;
+            }
+
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === currentSlideIndex) {
+                    slide.classList.add('active');
+                }
+            });
+
+            dots.forEach((dot, i) => {
+                dot.classList.remove('active');
+                if (i === currentSlideIndex) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlideIndex + direction);
+        }
+
+        function currentSlide(index) {
+            showSlide(index);
+        }
+    </script>
+</body>
+
+</html>
