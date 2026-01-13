@@ -39,12 +39,16 @@
         </section>
 
         <section class="project-overview">
-            <h2>Overview</h2>
+            <h2>Engineering Overview</h2>
             <p>
-                OpenFarm is an open-source platform designed to simplify the management and monitoring of multiple
-                3D printers. As one of the lead developers and principal maintainers of this project, I've contributed
-                to building a comprehensive solution that enables users to efficiently manage printer farms, monitor
-                print jobs, and coordinate resources across multiple devices.
+                OpenFarm is a <strong>distributed microservices framework</strong> architected to orchestrate fleets of 3D printers. 
+                As a Lead Maintainer, I co-designed the system using a containerized approach (Docker) to ensure scalable deployment across 
+                heterogeneous hardware.
+            </p>
+            <p>
+                The backend utilizes <strong>C#/.NET</strong> for high-throughput G-code parsing and job scheduling, while communicating 
+                asynchronously via <strong>RabbitMQ</strong> message brokers. This architecture allows for fault-tolerant 
+                monitoring of print jobs and real-time resource allocation.
             </p>
             <div class="screenshot-carousel">
                 <div class="carousel-container">
@@ -131,24 +135,22 @@
         </section>
 
         <section class="project-features">
-            <h2>Features</h2>
+            <h2>Key Technical Features</h2>
             <ul class="features-list">
-                <li>Centralized management of multiple 3D printers</li>
-                <li>Real-time monitoring of print jobs and printer status</li>
-                <li>Job queue management and scheduling</li>
-                <li>Resource allocation and optimization</li>
-                <li>Open-source architecture for community contributions</li>
+                <li><strong>Microservices Architecture:</strong> Decoupled services for auth, job queueing, and telemetry using Docker Compose.</li>
+                <li><strong>G-Code Parsing Engine:</strong> Custom C# logic to analyze print files for duration estimates and material usage.</li>
+                <li><strong>Asynchronous Messaging:</strong> RabbitMQ integration to handle high-volume status updates from printer nodes.</li>
+                <li><strong>Real-time Dashboard:</strong> Reactive Avalonia UI binding to live data streams for instant fleet status.</li>
             </ul>
         </section>
 
-        <section class="project-links">
+        <!-- <section class="project-links">
             <h2>Links</h2>
             <ul class="links-list">
-                <!-- <li><a href="https://github.com/observantabc123" target="_blank">GitHub Repository</a></li>
-                <li><a href="#" target="_blank">Project Website</a></li> -->
-                <li>Coming Soon!</li>
+                <li><a href="https://github.com/observantabc123" target="_blank">GitHub Repository</a></li>
+                <li><a href="#" target="_blank">Project Website</a></li>
             </ul>
-        </section>
+        </section> -->
     </main>
 
     <footer id="contact">

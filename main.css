@@ -146,7 +146,7 @@ section {
 
 .toggle-arrow {
     font-size: 1.2rem;
-    color: maroon;
+    color: #26428B;
     transition: transform 0.3s ease;
     padding: 0 10px;
 }
@@ -204,7 +204,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: maroon;
+    color: #26428B;
     font-weight: 500;
     padding: 6px 12px;
     border-radius: 4px;
@@ -213,7 +213,7 @@ nav a {
 
 nav a:hover {
     color: #fff;
-    background-color: maroon;
+    background-color: #26428B;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -273,7 +273,7 @@ footer li {
 
 footer a {
     text-decoration: none;
-    color: maroon;
+    color: #26428B;
     font-weight: 500;
 }
 
@@ -378,7 +378,7 @@ footer a:hover {
 }
 
 .carousel-btn {
-    background-color: maroon;
+    background-color: #26428B;
     color: white;
     border: 2px solid #333;
     font-size: 2.5rem;
@@ -397,7 +397,7 @@ footer a:hover {
 }
 
 .carousel-btn:hover {
-    background-color: #8b0000;
+    background-color: #1a377d;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -433,7 +433,7 @@ footer a:hover {
 }
 
 .dot.active {
-    background-color: maroon;
+    background-color: #26428B;
 }
 
 @media (max-width: 768px) {
@@ -485,7 +485,7 @@ footer a:hover {
     padding: 10px 15px;
     margin-bottom: 8px;
     background-color: #f8f9fa;
-    border: 3px solid maroon;
+    border: 3px solid #26428B;
     border-radius: 4px;
     width: fit-content;
 }
@@ -494,7 +494,7 @@ footer a:hover {
     padding: 10px 15px;
     margin-bottom: 8px;
     background-color: #f8f9fa;
-    border: 3px solid maroon;
+    border: 3px solid #26428B;
     border-radius: 4px;
     display: inline-block;
     list-style-type: none;
@@ -508,7 +508,7 @@ footer a:hover {
     content: '>';
     position: absolute;
     left: 10px;
-    color: maroon;
+    color: #26428B;
     font-weight: bold;
 }
 
@@ -520,17 +520,17 @@ footer a:hover {
 
 .links-list a {
     text-decoration: none;
-    color: maroon;
+    color: #26428B;
     font-weight: 500;
     padding: 8px 16px;
-    border: 1px solid maroon;
+    border: 1px solid #26428B;
     border-radius: 4px;
     transition: all 0.2s ease;
     display: inline-block;
 }
 
 .links-list a:hover {
-    background-color: maroon;
+    background-color: #26428B;
     color: #fff;
 }
 
@@ -546,19 +546,19 @@ footer a:hover {
 
 .projects-list a {
     text-decoration: none;
-    color: maroon;
+    color: #26428B;
     font-weight: 500;
     font-size: 1.1rem;
     padding: 12px 20px;
     display: inline-block;
-    border: 1px solid maroon;
+    border: 1px solid #26428B;
     border-radius: 4px;
     transition: all 0.2s ease;
     background-color: #f8f9fa;
 }
 
 .projects-list a:hover {
-    background-color: maroon;
+    background-color: #26428B;
     color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }

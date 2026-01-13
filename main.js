@@ -1,12 +1,12 @@
 // Initialize all sections as collapsed on page load
 document.addEventListener('DOMContentLoaded', function() {
-    const sections = ['about', 'experience', 'projects', 'contact'];
+    const sections = ['about', 'experience'];
     sections.forEach(sectionId => {
         const content = document.getElementById(`content-${sectionId}`);
         const arrow = document.getElementById(`arrow-${sectionId}`);
         if (content && arrow) {
-            content.classList.remove('expanded');
-            arrow.classList.remove('expanded');
+            content.classList.add('expanded');
+            arrow.classList.add('expanded');
         }
     });
 
